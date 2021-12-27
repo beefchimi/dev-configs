@@ -24,7 +24,6 @@
     "bootstrap": "lerna bootstrap",
     "check": "lerna run check",
     "version-bump": "lerna version --no-push --include-merged-tags",
-    "version": "node scripts/update-changelogs-on-version.js",
     "updated": "lerna updated"
   },
   "devDependencies": {

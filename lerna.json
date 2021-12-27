@@ -3,7 +3,7 @@
   "packages": ["packages/*"],
   "command": {
     "publish": {
-      "ignoreChanges": ["**/*.md", "**/tests/**", "**/test/**"],
+      "ignoreChanges": ["**/*.md", "**/tests/**"],
       "registry": "https://npm.pkg.github.com"
     }
   }
