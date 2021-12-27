@@ -1,0 +1,38 @@
+{
+  "name": "dev-configs",
+  "version": "1.0.0",
+  "description": "Common configurations for building web projects",
+  "author": "Curtis Dulmage",
+  "license": "ISC",
+  "keywords": [
+    "web",
+    "development",
+    "configuration"
+  ],
+  "homepage": "https://github.com/beefchimi/dev-configs#readme",
+  "bugs": {
+    "url": "https://github.com/beefchimi/dev-configs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beefchimi/dev-configs.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "check": "lerna run check",
+    "version-bump": "lerna version --no-push --include-merged-tags",
+    "version": "node scripts/update-changelogs-on-version.js",
+    "updated": "lerna updated"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "eslint": "^8.5.0",
+    "fs-extra": "^10.0.0",
+    "glob": "^7.2.0",
+    "jest": "^27.4.5",
+    "lerna": "^4.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4"
+  }
+}

@@ -1,0 +1,18 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Example SVG</title>
+
+  <g clip-path="url(#ClipPathId1)">
+    <text>Text element</text>
+    <rect width="100" height="100" fill="white" />
+    <circle cx="50" cy="50" r="50" fill="black" />
+    <path d="M50 0L93.3013 75H6.69873L50 0Z" fill="#C4C4C4" stroke="white" stroke-width="2" />
+    <rect x="18" y="55" width="64" height="20" stroke="black" />
+    <path d="M50 39L53.5922 50.0557H65.2169L55.8123 56.8885L59.4046 67.9443L50 61.1115L40.5954 67.9443L44.1877 56.8885L34.7831 50.0557H46.4078L50 39Z" fill="white" />
+  </g>
+
+  <defs>
+    <clipPath id="ClipPathId1">
+      <rect width="100" height="100" fill="white" />
+    </clipPath>
+  </defs>
+</svg>

@@ -1,0 +1,27 @@
+{
+  "name": "@beefchimi/config-assets",
+  "version": "1.0.0",
+  "description": "Asset optimization settings.",
+  "author": "Curtis Dulmage",
+  "license": "ISC",
+  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/config-assets/README.md",
+  "bugs": {
+    "url": "https://github.com/beefchimi/dev-configs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beefchimi/dev-configs.git",
+    "directory": "packages/config-assets"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "main": "index.ts",
+  "devDependencies": {
+    "svgo": "^2.8.0"
+  },
+  "peerDependencies": {
+    "svgo": ">=2.8.0"
+  }
+}
