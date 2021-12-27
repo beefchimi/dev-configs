@@ -4,6 +4,15 @@
   "description": "Asset optimization settings.",
   "author": "Curtis Dulmage",
   "license": "ISC",
+  "keywords": [
+    "web",
+    "development",
+    "configuration",
+    "assets",
+    "media",
+    "optimize",
+    "svg"
+  ],
   "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/config-assets/README.md",
   "bugs": {
     "url": "https://github.com/beefchimi/dev-configs/issues"
@@ -17,7 +26,7 @@
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
-  "main": "index.ts",
+  "main": "index.js",
   "devDependencies": {
     "svgo": "^2.8.0"
   },

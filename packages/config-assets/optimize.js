@@ -1,8 +1,4 @@
-interface SvgoOptions {
-  [key: string]: unknown;
-}
-
-export function svgoConfig(): SvgoOptions {
+export function svgoConfig() {
   return {
     plugins: [
       {
