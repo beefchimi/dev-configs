@@ -1,0 +1,34 @@
+{
+  "name": "@beefchimi/config-prettier",
+  "version": "1.0.0",
+  "description": "Code style settings.",
+  "author": "Curtis Dulmage",
+  "license": "ISC",
+  "keywords": [
+    "web",
+    "development",
+    "configuration",
+    "style",
+    "prettier"
+  ],
+  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/config-prettier/README.md",
+  "bugs": {
+    "url": "https://github.com/beefchimi/dev-configs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beefchimi/dev-configs.git",
+    "directory": "packages/config-prettier"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "main": "index.json",
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  },
+  "peerDependencies": {
+    "prettier": ">=2.5.1"
+  }
+}
