@@ -1,0 +1,35 @@
+{
+  "name": "@beefchimi/config-typescript",
+  "version": "1.0.0",
+  "description": "Common configurations for any kind of TypeScript project.",
+  "author": "Curtis Dulmage",
+  "license": "ISC",
+  "keywords": [
+    "web",
+    "development",
+    "configuration",
+    "typescript",
+    "application",
+    "library",
+    "node"
+  ],
+  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/config-typescript/README.md",
+  "bugs": {
+    "url": "https://github.com/beefchimi/dev-configs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beefchimi/dev-configs.git",
+    "directory": "packages/config-typescript"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.5.4"
+  }
+}
