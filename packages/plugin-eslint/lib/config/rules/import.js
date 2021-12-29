@@ -1,3 +1,5 @@
+/* eslint-disable spaced-comment */
+
 // Reference:
 // https://github.com/benmosher/eslint-plugin-import
 
@@ -99,7 +101,7 @@ module.exports = {
     'error',
     {
       groups: ['builtin', 'external', 'internal', 'parent', 'sibling'],
-      'newlines-between': 'always',
+      'newlines-between': 'ignore',
     },
   ],
   // Enforce a newline after import statements

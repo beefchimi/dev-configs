@@ -206,7 +206,7 @@ module.exports = {
   // Require or disallow spaces before/after unary operators (words on by default, nonwords)
   'space-unary-ops': ['error', {words: true, nonwords: false}],
   // Require or disallow a space immediately following the // or /* in a comment
-  'spaced-comment': ['error', 'always', {markers: ['=']}],
+  'spaced-comment': ['error', 'always', {markers: ['=', '/']}],
   // Enforce spacing around colons of switch statements
   'switch-colon-spacing': ['error', {after: true, before: false}],
   // Require or disallow spacing between template tags and their literals

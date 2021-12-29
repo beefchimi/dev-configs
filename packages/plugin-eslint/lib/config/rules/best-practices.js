@@ -133,8 +133,6 @@ module.exports = {
   'no-useless-return': 'error',
   // Disallow use of void operator
   'no-void': 'error',
-  // Disallow usage of configurable warning terms in comments
-  'no-warning-comments': 'error',
   // Disallow use of the with statement
   'no-with': 'error',
   // Suggest using named capture group in regular expression
