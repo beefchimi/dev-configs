@@ -1,3 +1,9 @@
 module.exports = {
-  extends: ['eslint:recommended'],
+  extends: [
+    'plugin:@shopify/typescript',
+    'plugin:@shopify/react',
+    'plugin:@shopify/prettier',
+    'plugin:@shopify/node',
+    'plugin:@shopify/jest',
+  ],
 };
