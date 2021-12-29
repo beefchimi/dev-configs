@@ -1,8 +1,7 @@
 const {join, dirname, relative, basename} = require('path');
 
 const resolve = require('eslint-module-utils/resolve').default;
-// TODO: Cannot update this dependency
-// until the project is converted to TS + ESM.
+// Cannot update this dependency until the project is converted to TS + ESM.
 const pkgDir = require('pkg-dir');
 
 function uncast(node) {

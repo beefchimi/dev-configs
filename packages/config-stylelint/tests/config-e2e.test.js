@@ -2,6 +2,7 @@ const {spawnSync} = require('child_process');
 const path = require('path');
 const {resolve} = require('path');
 
+// Cannot update this dependency until the project is converted to TS + ESM.
 const stripAnsi = require('strip-ansi');
 
 // Tests that report errors in multiple files may change the order
