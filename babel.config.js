@@ -1,3 +1,4 @@
 module.exports = {
-  presets: ['@babel/preset-env'],
+  targets: 'current node',
+  presets: [['@shopify/babel-preset', {modules: 'commonjs', typescript: true}]],
 };

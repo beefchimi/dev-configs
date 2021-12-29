@@ -28,7 +28,7 @@
     "updated": "lerna updated"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.16.5",
+    "@shopify/babel-preset": "^24.1.5",
     "@shopify/eslint-plugin": "^41.0.1",
     "eslint": "^8.5.0",
     "fs-extra": "^10.0.0",
