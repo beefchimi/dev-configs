@@ -5,6 +5,9 @@
   "author": "Curtis Dulmage",
   "license": "ISC",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "keywords": [
     "web",
     "development",
@@ -21,7 +24,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
-    "nuke": "node scripts/nuke.js",
+    "nuke": "rm -rf node_modules && rm -rf yarn.lock",
     "bootstrap": "lerna bootstrap",
     "check": "lerna run check",
     "version-bump": "lerna version --no-push --include-merged-tags",
@@ -36,7 +39,6 @@
     "jest": "^27.4.5",
     "lerna": "^4.0.0",
     "prettier": "^2.5.1",
-    "rimraf": "^3.0.2",
     "typescript": "^4.5.4"
   }
 }
