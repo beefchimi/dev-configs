@@ -1,3 +1,5 @@
+/* eslint-disable spaced-comment */
+
 // Reference:
 // https://github.com/xjamundx/eslint-plugin-promise
 

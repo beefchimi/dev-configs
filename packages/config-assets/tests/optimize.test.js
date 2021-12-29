@@ -1,5 +1,5 @@
+/* eslint-disable import/order */
 import {optimize} from 'svgo';
-
 import {svgoConfig} from '../optimize';
 import {getFixture} from './helpers';
 
