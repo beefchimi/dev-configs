@@ -34,8 +34,6 @@
     "@shopify/babel-preset": "^24.1.5",
     "@shopify/eslint-plugin": "^41.0.1",
     "eslint": "^8.5.0",
-    "fs-extra": "^10.0.0",
-    "glob": "^7.2.0",
     "jest": "^27.4.5",
     "lerna": "^4.0.0",
     "prettier": "^2.5.1",
