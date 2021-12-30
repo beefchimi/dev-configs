@@ -1,3 +1,5 @@
+# This script is useful for Yarn v2+ projects.
+
 function yarnNuke() {
   rm -rf .yarn &&
   rm -rf yarn.lock &&
@@ -7,11 +9,13 @@ function yarnNuke() {
   yarn cache clean --all
 }
 
-function yarnReboot() {
-  yarnNuke &&
+function yarnSetup() {
   yarn set version stable &&
   yarn install
 }
 
-# This script is only useful for Yarn v3 projects.
+function yarnReboot() {
+  yarnNuke && yarnSetup
+}
+
 yarnReboot
