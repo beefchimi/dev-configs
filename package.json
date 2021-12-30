@@ -26,7 +26,6 @@
     "test": "jest",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "nuke": "./scripts/nuke.sh",
-    "check": "lerna run check",
     "version-bump": "lerna version --no-push --include-merged-tags",
     "updated": "lerna updated"
   },
