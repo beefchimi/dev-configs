@@ -1,9 +1,11 @@
 module.exports = {
   extends: [
-    'plugin:@shopify/typescript',
+    'plugin:@shopify/core',
+    'plugin:@shopify/esnext',
     'plugin:@shopify/react',
-    'plugin:@shopify/prettier',
-    'plugin:@shopify/node',
+    'plugin:@shopify/typescript',
     'plugin:@shopify/jest',
+    'plugin:@shopify/node',
+    'plugin:@shopify/prettier',
   ],
 };

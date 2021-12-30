@@ -5,7 +5,7 @@
   "author": "Curtis Dulmage",
   "license": "ISC",
   "private": true,
-  "packageManager": "yarn@1.22.15",
+  "packageManager": "yarn@3.1.1",
   "workspaces": [
     "packages/*"
   ],
@@ -25,8 +25,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
-    "nuke": "rm -rf node_modules && rm -rf yarn.lock && yarn cache clean",
-    "bootstrap": "lerna bootstrap",
+    "reboot": "echo 'Please run: `sh ./scripts/reboot.sh`'",
     "check": "lerna run check",
     "version-bump": "lerna version --no-push --include-merged-tags",
     "updated": "lerna updated"
