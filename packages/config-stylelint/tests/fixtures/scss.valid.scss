@@ -1,19 +1,47 @@
 // CSS nesting triggers a parse error if we're not using a customSyntax.
 .n1 {
   .n2 {
-    .n4 {
-      padding: 1px;
+    .n3 {
+      margin: 1px;
     }
   }
 }
 
-.foo {
-  $size: 10;
-  padding: $size * 1px;
+div > [disabled] + .n3 {
+  padding: 1px;
 }
 
 .bar {
   .bar-baz {
-    padding: 8px;
+    height: auto;
   }
+}
+
+[id='MyId'] {
+  width: 100%;
+}
+
+button.thing {
+  appearance: none;
+
+  &[disabled] {
+    cursor: pointer;
+  }
+}
+
+.textInput[placeholder] {
+  cursor: pointer;
+}
+
+div.name {
+  &::before {
+    content: '';
+  }
+}
+
+// Unit creation is disallowed using string concatenation,
+// so this is the preferred method.
+.foo {
+  $size: 10;
+  padding: $size * 1px;
 }

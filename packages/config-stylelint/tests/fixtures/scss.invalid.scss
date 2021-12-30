@@ -1,12 +1,57 @@
 // CSS nesting triggers a parse error if we're not using a customSyntax.
-// `selector-max-class/selector-max-combinators` are configured to
-// disallow 4 or more levels of nesting
+// `selector-max-class`, `selector-max-combinators`,
+// and `selector-max-specificity` are all configured to
+// disallow 4 or more levels of nesting.
 .n1 {
   .n2 {
     .n3 {
       .n4 {
-        padding: 1px;
+        margin: 1px;
       }
+    }
+  }
+}
+
+div > [disabled] + .n3 ~ .n4 {
+  padding: 1px;
+}
+
+// `scss/selector-no-union-class-name` is configured to disallow
+// using `&` for constructing class names
+.bar {
+  &-baz {
+    height: auto;
+  }
+}
+
+#MyId {
+  width: 100%;
+}
+
+button.input.button[disabled] {
+  appearance: none;
+}
+
+input[type='text'][placeholder] {
+  cursor: pointer;
+}
+
+div.name.another {
+  &::before {
+    content: '';
+  }
+}
+
+// Prevent duplicate selectors
+
+button.thing[disabled] {
+  appearance: none;
+}
+
+button {
+  &.thing {
+    &[disabled] {
+      cursor: pointer;
     }
   }
 }
@@ -16,12 +61,4 @@
 .foo {
   $size: 10;
   padding: #{$size}px;
-}
-
-// `scss/selector-no-union-class-name` is configured to disallow
-// using `&` for constructing class names
-.bar {
-  &-baz {
-    padding: 8px;
-  }
 }

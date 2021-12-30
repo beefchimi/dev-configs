@@ -423,9 +423,9 @@ module.exports = {
   // Limit the number of attribute selectors in a selector.
   'selector-max-attribute': 1,
   // Limit the number of classes in a selector.
-  'selector-max-class': 2,
+  'selector-max-class': 3,
   // Limit the number of combinators in a selector.
-  'selector-max-combinators': 2,
+  'selector-max-combinators': 3,
   // Limit the number of id selectors in a selector.
   'selector-max-id': 0,
   // Limit the number of type in a selector.
@@ -445,13 +445,18 @@ module.exports = {
   // the commas of selector lists.
   'selector-list-comma-space-before': 'never',
   // Limit the number of compound selectors in a selector.
-  'selector-max-compound-selectors': 4,
+  'selector-max-compound-selectors': 3,
   // Limit the specificity of selectors.
   'selector-max-specificity': '0,3,1',
   // Specify a pattern for the selectors of rules nested within rules.
   'selector-nested-pattern': null,
   // Disallow qualifying a selector by type.
-  'selector-no-qualifying-type': true,
+  'selector-no-qualifying-type': [
+    true,
+    {
+      ignore: ['attribute', 'class'],
+    },
+  ],
   // Disallow vendor prefixes for selectors.
   'selector-no-vendor-prefix': true,
   // Specify a disallowed-list of disallowed pseudo-class selectors.

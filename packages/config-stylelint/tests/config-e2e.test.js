@@ -20,7 +20,7 @@ value-keyword-case.invalid.scss
  1:7   ✖  Expected "Value" to be "value"    value-keyword-case
  2:7   ✖  Expected "VALUE" to be "value"    value-keyword-case
  5:10  ✖  Expected "Monaco" to be "monaco"  value-keyword-case
- 6:18  ✖  Expected "Monaco" to be "monaco"  value-keyword-case
+ 6:16  ✖  Expected "Monaco" to be "monaco"  value-keyword-case
 `.trim();
 
     expect(result.output).toStrictEqual(expectedResult);
@@ -36,10 +36,16 @@ value-keyword-case.invalid.scss
     // whitespace when saving the file.
     const expectedResult = `
 scss.invalid.scss
-  6:5   ✖  Expected ".n1 .n2 .n3" to have no more than 2 classes                                                  selector-max-class                  ${''}
-  6:5   ✖  Expected ".n1 .n2 .n3" to have no more than 1 combinator                                               selector-max-combinators            ${''}
- 16:20  ✖  Expected "$value * 1px" instead of "#{$value}px". Consider writing "value" in terms of px originally.  scss/dimension-no-non-numeric-values
- 22:3   ✖  Unexpected union class name with the parent selector (&)                                               scss/selector-no-union-class-name
+  8:7   ✖  Expected ".n1 .n2 .n3 .n4" to have no more than 3 classes                                              selector-max-class                  ${''}
+  8:7   ✖  Expected ".n1 .n2 .n3 .n4" to have no more than 3 compound selectors                                   selector-max-compound-selectors     ${''}
+  8:7   ✖  Expected ".n1 .n2 .n3 .n4" to have a specificity no more than "0,3,1"                                  selector-max-specificity            ${''}
+ 15:1   ✖  Expected "div > [disabled] + .n3 ~ .n4" to have no more than 3 compound selectors                      selector-max-compound-selectors     ${''}
+ 22:3   ✖  Unexpected union class name with the parent selector (&)                                               scss/selector-no-union-class-name   ${''}
+ 27:1   ✖  Expected "#MyId" to have no more than 0 ID selectors                                                   selector-max-id                     ${''}
+ 27:1   ✖  Expected "#MyId" to have a specificity no more than "0,3,1"                                            selector-max-specificity            ${''}
+ 35:1   ✖  Expected "input[type='text'][placeholder]" to have no more than 1 attribute selector                   selector-max-attribute              ${''}
+ 53:5   ✖  Unexpected duplicate selector "button.thing[disabled]", first used at line 47                          no-duplicate-selectors              ${''}
+ 63:20  ✖  Expected "$value * 1px" instead of "#{$value}px". Consider writing "value" in terms of px originally.  scss/dimension-no-non-numeric-values
 `.trim();
 
     expect(result.output).toStrictEqual(expectedResult);
