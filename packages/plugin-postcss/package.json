@@ -24,6 +24,12 @@
     "registry": "https://npm.pkg.github.com"
   },
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "test": "echo 'Run `jest` from root'",
+    "build": "echo 'Nothing to build in `plugin-postcss`.'",
+    "prepublish": "yarn run build"
+  },
   "dependencies": {
     "autoprefixer": "^10.4.1",
     "postcss-calc": "^8.0.0",

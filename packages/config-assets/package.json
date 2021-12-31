@@ -27,6 +27,12 @@
     "registry": "https://npm.pkg.github.com"
   },
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "test": "echo 'Run `jest` from root.'",
+    "build": "echo 'Nothing to build in `config-assets`.'",
+    "prepublish": "yarn run build"
+  },
   "devDependencies": {
     "svgo": "^2.8.0"
   },
