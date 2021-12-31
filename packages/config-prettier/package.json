@@ -25,6 +25,12 @@
     "registry": "https://npm.pkg.github.com"
   },
   "main": "index.json",
+  "scripts": {
+    "lint": "echo 'Nothing to lint in `config-prettier`.'",
+    "test": "echo 'Run `jest` from root'",
+    "build": "echo 'Nothing to build in `config-prettier`.'",
+    "prepublish": "yarn run build"
+  },
   "devDependencies": {
     "prettier": "^2.5.1"
   },

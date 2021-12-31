@@ -23,10 +23,13 @@
     "url": "git+https://github.com/beefchimi/dev-configs.git"
   },
   "scripts": {
+    "lint": "lerna run lint --",
     "test": "jest",
-    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "build": "lerna run build",
     "nuke": "./scripts/nuke.sh",
-    "release": "lerna publish from-package -y --no-verify-access"
+    "report": "yarn changeset",
+    "prepublish": "lerna run prepublish",
+    "release": "changeset publish"
   },
   "dependencies": {
     "@changesets/changelog-github": "^0.4.2",

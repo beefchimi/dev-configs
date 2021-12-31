@@ -24,6 +24,12 @@
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
+  "scripts": {
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "test": "echo 'Run `jest` from root'",
+    "build": "echo 'Nothing to build in `plugin-eslint`.'",
+    "prepublish": "yarn run build"
+  },
   "devDependencies": {
     "@shopify/eslint-plugin": "^41.0.1"
   },

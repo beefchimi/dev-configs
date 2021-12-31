@@ -26,6 +26,12 @@
     "registry": "https://npm.pkg.github.com"
   },
   "main": "index.js",
+  "scripts": {
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "test": "echo 'Run `jest` from root'",
+    "build": "echo 'Nothing to build in `config-stylelint`.'",
+    "prepublish": "yarn run build"
+  },
   "dependencies": {
     "postcss": "^8.4.5",
     "postcss-scss": "^4.0.2",

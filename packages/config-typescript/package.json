@@ -26,6 +26,12 @@
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
+  "scripts": {
+    "lint": "echo 'Nothing to lint in `config-typescript`.'",
+    "test": "echo 'Run `jest` from root'",
+    "build": "echo 'Nothing to build in `config-typescript`.'",
+    "prepublish": "yarn run build"
+  },
   "devDependencies": {
     "typescript": "^4.5.4"
   },
