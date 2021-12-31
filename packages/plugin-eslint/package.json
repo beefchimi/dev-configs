@@ -1,6 +1,6 @@
 {
   "name": "@beefchimi/plugin-eslint",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "JavaScript linting configuration.",
   "author": "Curtis Dulmage",
   "license": "ISC",
