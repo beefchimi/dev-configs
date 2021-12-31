@@ -27,6 +27,7 @@
     "test": "jest",
     "build": "lerna run build",
     "nuke": "./scripts/nuke.sh",
+    "report": "yarn changeset",
     "prepublish": "lerna run prepublish",
     "release": "changeset publish"
   },
