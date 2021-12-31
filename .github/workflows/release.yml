@@ -1,0 +1,52 @@
+name: Publish Packages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build codebase
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 17.x
+      - run: yarn
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node 17.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 17.x
+
+      - name: Install dependencies and build (with cache)
+        uses: bahmutov/npm-install@v1
+
+      - name: Create Release Pull Request
+        uses: changesets/action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 17.x
+          registry-url: https://npm.pkg.github.com/
+          scope: '@beefchimi'
+      - run: yarn
+      - run: yarn release
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -26,8 +26,7 @@
     "test": "jest",
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "nuke": "./scripts/nuke.sh",
-    "version-bump": "lerna version --no-push --include-merged-tags",
-    "updated": "lerna updated"
+    "release": "lerna publish from-package -y --no-verify-access"
   },
   "dependencies": {
     "@changesets/changelog-github": "^0.4.2",
