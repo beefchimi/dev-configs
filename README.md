@@ -32,5 +32,5 @@ Expectations for any front-end project can be broken up into the following categ
 ```bash
 git clone git@github.com:beefchimi/dev-configs.git
 yarn
-yarn lerna bootstrap
+yarn run bootstrap
 ```
