@@ -14,8 +14,8 @@ function yarnSetup() {
   yarn install
 }
 
-function yarnReboot() {
+function rebootYarn3() {
   yarnNuke && yarnSetup
 }
 
-yarnReboot
+rebootYarn3

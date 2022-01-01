@@ -1,6 +1,6 @@
 # This script is useful for both NPM and Yarn v1.
 
-function generalNuke() {
+function npmNuke() {
   rm -rf node_modules &&
   rm -rf yarn.lock &&
   rm -rf package-lock.json &&
@@ -8,4 +8,4 @@ function generalNuke() {
   find ./packages -name "package-lock.json" -type f -maxdepth 2 -exec rm {} +
 }
 
-generalNuke
+npmNuke

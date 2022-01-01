@@ -27,7 +27,7 @@
     "test": "jest",
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
-    "nuke": "./scripts/nuke.sh",
+    "reboot": "./scripts/reboot-yarn-v1.sh",
     "report": "yarn changeset",
     "prepublish": "lerna run prepublish",
     "release": "changeset publish"
