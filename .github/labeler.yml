@@ -6,4 +6,4 @@
 📦️ plugin-eslint: packages/plugin-eslint/**/*
 📦️ plugin-postcss: packages/plugin-postcss/**/*
 👽️ dependency: package.json
-🔖 release: .changeset/*
+🔖 release: packages/**/CHANGELOG.md

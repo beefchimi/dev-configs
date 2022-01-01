@@ -34,3 +34,11 @@ git clone git@github.com:beefchimi/dev-configs.git
 yarn
 yarn run bootstrap
 ```
+
+## Notes
+
+### Yarn
+
+I have not yet figured out how to correctly use `yarn@v3 + workspaces`, and am therefor sticking with `yarn@v1` for now.
+
+Once quirk appears to be `yarn` running `prepublish` whenever `add` or `install` is run.
