@@ -11,6 +11,15 @@ jobs:
       pull-requests: write
 
     steps:
-      - uses: actions/labeler@v3
+      - uses: actions/checkout@v2
+
+      - uses: tibdex/github-app-token@v1
+        id: generate-token
         with:
-          repo-token: '${{ secrets.GITHUB_TOKEN }}'
+          app_id: ${{ secrets.BEEFCHIMI_APP_ID }}
+          private_key: ${{ secrets.BEEFCHIMI_APP_PRIVATE_KEY }}
+
+      - name: Apply PR labels
+        uses: actions/labeler@v3
+        with:
+          repo-token: '${{ steps.generate-token.outputs.token }}'
