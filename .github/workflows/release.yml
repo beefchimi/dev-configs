@@ -25,10 +25,10 @@ jobs:
 
       - name: Create Release Pull Request or Publish to Github Packages
         id: changesets
-        uses: changesets/action@master
+        uses: changesets/action@v1
         with:
-          registry-url: https://npm.pkg.github.com/
-          scope: '@beefchimi'
+          # Because each package defines both a `publishConfig` and a `repository`,
+          # the action should understand which registry to publish to.
           publish: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
