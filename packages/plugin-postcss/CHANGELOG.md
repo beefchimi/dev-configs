@@ -1,5 +1,11 @@
 # @beefchimi/plugin-postcss
 
+## 0.0.2
+
+### Patch Changes
+
+- [#13](https://github.com/beefchimi/dev-configs/pull/13) [`b1ab59a`](https://github.com/beefchimi/dev-configs/commit/b1ab59a5dd6465936f8f90858317d0d923fd0c9f) Thanks [@beefchimi](https://github.com/beefchimi)! - Fix incorrect version numbering for config-typescript.
+
 ## 0.0.1
 
 ### Patch Changes
