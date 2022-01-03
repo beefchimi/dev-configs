@@ -1,6 +1,6 @@
 {
   "name": "@beefchimi/config-prettier",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Code style settings.",
   "author": "Curtis Dulmage",
   "license": "ISC",
