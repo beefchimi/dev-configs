@@ -11,7 +11,8 @@ function yarnNuke() {
 
 function yarnSetup() {
   yarn set version stable &&
-  yarn install
+  yarn install &&
+  yarn plugin import workspace-tools
 }
 
 function rebootYarn3() {
