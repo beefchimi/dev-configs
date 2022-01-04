@@ -39,6 +39,23 @@ yarn run bootstrap
 
 ### Yarn
 
-I have not yet figured out how to correctly use `yarn@v3 + workspaces`, and am therefor sticking with `yarn@v1` for now.
+I have not yet figured out how to correctly use `yarn@v3 + workspaces`, and am therefor sticking with `yarn@v1` for now. A PR attempting that upgrade can be found here:
 
-Once quirk appears to be `yarn` running `prepublish` whenever `add` or `install` is run.
+[🔥 [Yarn] Attempt to remove lerna in favour of yarn v3 `#18`](https://github.com/beefchimi/dev-configs/pull/18)
+
+## Resources
+
+The following links may come in handy:
+
+- [How to Create and Publish a React Component Library](https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe)
+  - [Tutorial Repo](https://github.com/alexeagleson/template-react-component-library)
+- [DnD Kit Repo](https://github.com/clauderic/dnd-kit)
+- [Azu Repo](https://github.com/azu/monorepo-release-changesets)
+- [Shipping multipackage repos with GitHub actions, Changesets, and Lerna](https://www.christopherbiscardi.com/post/shipping-multipackage-repos-with-github-actions-changesets-and-lerna)
+- [Turn and face the Changelog](https://www.erichowey.dev/writing/ch-ch-changesets-turn-and-face-the-changelog/)
+- [How to configure Jest with TypeScript](https://swizec.com/blog/how-to-configure-jest-with-typescript/)
+- [Configuring TypeScript for multiple packages in a Lerna + Yarn work-spaces Repo](https://medium.com/@dandobusiness/setting-up-typescript-in-a-mono-repo-cd49a38d6030)
+- [Pure ESM](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c)
+- [Managing monorepos with Lerna and Yarn workspaces](https://dev.to/tevez07b9/managing-monorepos-with-lerna-and-yarn-workspaces-4bhl)
+- [Migrating a monorepo from Lerna to Yarn 3 with PnP and Zero Install](https://psidium.github.io/lerna/monorepo/yarn/nodejs/pnp/zero-install/2021/08/23/migrating-a-monorepo-from-lerna-to-yarn-3.html)
+- [How to use ESLint with TypeScript](https://khalilstemmler.com/blogs/typescript/eslint-for-typescript/)
