@@ -1,12 +1,11 @@
 # This script is useful for Yarn v1 projects.
 
-function rebootYarn1() {
-  sh ./scripts/nuke.sh &&
-  yarn cache clean --all &&
+function rebootYarnLegacy() {
+  sh ./scripts/nuke-yarn.sh &&
   yarn install &&
   yarn run bootstrap &&
   npx yarn-deduplicate -s fewer yarn.lock &&
   yarn
 }
 
-rebootYarn1
+rebootYarnLegacy
