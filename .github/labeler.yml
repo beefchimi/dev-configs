@@ -7,3 +7,4 @@
 📦️ plugin-postcss: packages/plugin-postcss/**/*
 👽️ dependency: package.json
 🔖 release: packages/**/CHANGELOG.md
+🔧 tooling: scripts/*
