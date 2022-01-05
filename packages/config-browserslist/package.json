@@ -1,6 +1,6 @@
 {
   "name": "@beefchimi/config-browserslist",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Common range of modern browser support.",
   "author": "Curtis Dulmage",
   "license": "ISC",

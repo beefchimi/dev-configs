@@ -1,5 +1,11 @@
 # @beefchimi/config-assets
 
+## 0.0.3
+
+### Patch Changes
+
+- [#23](https://github.com/beefchimi/dev-configs/pull/23) [`c764ef1`](https://github.com/beefchimi/dev-configs/commit/c764ef1195226d90835c16a9dca788bd011d0ce0) Thanks [@beefchimi](https://github.com/beefchimi)! - Renamed the plugin packages
+
 ## 0.0.2
 
 ### Patch Changes
