@@ -1,5 +1,3 @@
-/* eslint-disable spaced-comment */
-
 // Reference:
 // https://github.com/benmosher/eslint-plugin-import
 

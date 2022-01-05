@@ -7,7 +7,7 @@ const ruleTester = new RuleTester({
   settings: {react: {version: 'detect'}},
 });
 
-const tsParser = require.resolve('@typescript-eslint/parser');
+const babelParser = require.resolve('@babel/eslint-parser');
 
 function makeError({type = 'PropertyDefinition', memberName, componentName}) {
   return {
@@ -29,11 +29,11 @@ ruleTester.run('react-prefer-private-members', rule, {
         publicMember = true
         publicMethod() {}
       }`,
-      parser: tsParser,
+      parser: babelParser,
     },
     {
       code: 'class Button extends React.Component {}',
-      parser: tsParser,
+      parser: babelParser,
     },
     {
       code: `class KitchenSink extends React.Component {
@@ -61,7 +61,7 @@ ruleTester.run('react-prefer-private-members', rule, {
         componentWillUnmount() {}
         render() {}
       }`,
-      parser: tsParser,
+      parser: babelParser,
     },
     {
       code: `class CompoundComponent extends React.Component {
@@ -70,7 +70,7 @@ ruleTester.run('react-prefer-private-members', rule, {
         static AnotherItem = AnotherItem
         render() {}
       }`,
-      parser: tsParser,
+      parser: babelParser,
     },
     {
       code: `class NormalClass {
@@ -82,7 +82,7 @@ ruleTester.run('react-prefer-private-members', rule, {
 
       get foo() {}
     }`,
-      parser: tsParser,
+      parser: babelParser,
     },
   ],
   invalid: [
@@ -91,7 +91,7 @@ ruleTester.run('react-prefer-private-members', rule, {
         publicMember = true;
         componentDidMount() {}
       }`,
-      parser: tsParser,
+      parser: babelParser,
       errors: [
         makeError({memberName: 'publicMember', componentName: 'Button'}),
       ],
@@ -102,7 +102,7 @@ ruleTester.run('react-prefer-private-members', rule, {
         static inValid = inValid;
         render() {}
       }`,
-      parser: tsParser,
+      parser: babelParser,
       errors: [makeError({memberName: 'inValid', componentName: 'Button'})],
     },
     {
@@ -131,7 +131,7 @@ ruleTester.run('react-prefer-private-members', rule, {
         publicMethod() {}
         componentDidMount() {}
       }`,
-      parser: tsParser,
+      parser: babelParser,
       errors: [
         makeError({
           type: 'MethodDefinition',
@@ -145,7 +145,7 @@ ruleTester.run('react-prefer-private-members', rule, {
         publicMethod() {}
         componentDidMount() {}
       }`,
-      parser: tsParser,
+      parser: babelParser,
       errors: [
         makeError({
           type: 'MethodDefinition',
@@ -165,7 +165,7 @@ ruleTester.run('react-prefer-private-members', rule, {
 
       get foo() {}
     }`,
-      parser: tsParser,
+      parser: babelParser,
       errors: [
         makeError({
           type: 'MethodDefinition',

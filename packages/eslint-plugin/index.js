@@ -25,12 +25,15 @@ module.exports = {
     'typescript/prefer-singular-enums': require('./lib/rules/typescript/prefer-singular-enums'),
   },
 
-  // When extending, configs are order dependent.
+  // When extending, configs are order dependent!
   configs: {
+    // At least one "base" config should be loaded first:
     core: require('./lib/config/core'),
-    // Augmenting configs:
-    typescript: require('./lib/config/typescript'),
+    esnext: require('./lib/config/esnext'),
     react: require('./lib/config/react'),
+    typescript: require('./lib/config/typescript'),
+    'type-checking': require('./lib/config/type-checking'),
+    // Augmenting configs:
     jest: require('./lib/config/jest'),
     node: require('./lib/config/node'),
     prettier: require('./lib/config/prettier'),

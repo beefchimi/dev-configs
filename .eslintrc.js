@@ -1,11 +1,10 @@
 module.exports = {
   extends: [
-    'plugin:@shopify/core',
-    'plugin:@shopify/esnext',
-    'plugin:@shopify/react',
-    'plugin:@shopify/typescript',
-    'plugin:@shopify/jest',
-    'plugin:@shopify/node',
-    'plugin:@shopify/prettier',
+    'plugin:@beefchimi/esnext',
+    'plugin:@beefchimi/react',
+    'plugin:@beefchimi/typescript',
+    'plugin:@beefchimi/jest',
+    'plugin:@beefchimi/node',
+    'plugin:@beefchimi/prettier',
   ],
 };
