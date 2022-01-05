@@ -1,4 +1,4 @@
-# @beefchimi/plugin-postcss
+# @beefchimi/postcss-plugin
 
 ## 0.0.2
 

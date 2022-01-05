@@ -8,7 +8,7 @@ module.exports = ({calcOptions = {}, autoprefixerOptions = {}} = {}) => {
       require('postcss-will-change'),
       require('autoprefixer')(autoprefixerOptions),
     ]),
-    postcssPlugin: '@beefchimi/plugin-postcss',
+    postcssPlugin: '@beefchimi/postcss-plugin',
   };
 };
 

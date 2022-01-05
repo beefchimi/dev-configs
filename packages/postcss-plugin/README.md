@@ -1,13 +1,13 @@
-# `plugin-postcss`
+# `postcss-plugin`
 
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC) [![npm version](https://badge.fury.io/js/%beefchimi%plugin-postcss.svg)](https://badge.fury.io/js/%beefchimi%plugin-postcss.svg)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC) [![npm version](https://badge.fury.io/js/%beefchimi%postcss-plugin.svg)](https://badge.fury.io/js/%beefchimi%postcss-plugin.svg)
 
 A collection of common PostCSS plugins.
 
 ## Installation
 
 ```bash
-yarn add --dev @beefchimi/plugin-postcss
+yarn add --dev @beefchimi/postcss-plugin
 ```
 
 **Note:** You may run into issues if you have installed ESLint globally (using the `-g` flag).

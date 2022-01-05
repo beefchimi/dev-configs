@@ -4,7 +4,7 @@
 📦️ config-stylelint: packages/config-stylelint/**/*
 📦️ config-typescript: packages/config-typescript/**/*
 📦️ plugin-eslint: packages/eslint-plugin/**/*
-📦️ plugin-postcss: packages/plugin-postcss/**/*
+📦️ plugin-postcss: packages/postcss-plugin/**/*
 👽️ dependency: package.json
 🔖 release: packages/**/CHANGELOG.md
 🔧 tooling: scripts/*

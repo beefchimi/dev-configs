@@ -1,5 +1,5 @@
 {
-  "name": "@beefchimi/plugin-postcss",
+  "name": "@beefchimi/postcss-plugin",
   "version": "0.0.2",
   "description": "A collection of common PostCSS plugins.",
   "author": "Curtis Dulmage",
@@ -10,14 +10,14 @@
     "plugin",
     "postcss"
   ],
-  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/plugin-postcss/README.md",
+  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/postcss-plugin/README.md",
   "bugs": {
     "url": "https://github.com/beefchimi/dev-configs/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beefchimi/dev-configs.git",
-    "directory": "packages/plugin-postcss"
+    "directory": "packages/postcss-plugin"
   },
   "publishConfig": {
     "access": "public",
@@ -27,7 +27,7 @@
   "scripts": {
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "test": "echo 'Run `jest` from root'",
-    "build": "echo 'Nothing to build in `plugin-postcss`.'",
+    "build": "echo 'Nothing to build in `postcss-plugin`.'",
     "prepublish": "yarn run build"
   },
   "dependencies": {
