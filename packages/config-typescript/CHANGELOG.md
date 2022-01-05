@@ -1,5 +1,11 @@
 # @beefchimi/config-typescript
 
+## 0.0.4
+
+### Patch Changes
+
+- [#25](https://github.com/beefchimi/dev-configs/pull/25) [`f0f6aa9`](https://github.com/beefchimi/dev-configs/commit/f0f6aa98c50214ef49385fd94ffaf3bd7c64d666) Thanks [@beefchimi](https://github.com/beefchimi)! - Resolved issues with eslint-plugin
+
 ## 0.0.3
 
 ### Patch Changes

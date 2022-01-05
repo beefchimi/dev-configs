@@ -1,6 +1,6 @@
 {
   "name": "@beefchimi/config-stylelint",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Linting for CSS and SCSS.",
   "author": "Curtis Dulmage",
   "license": "ISC",
