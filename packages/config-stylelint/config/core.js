@@ -1,5 +1,3 @@
-/* eslint-disable spaced-comment */
-
 module.exports = {
   ///
   /// @ Rules

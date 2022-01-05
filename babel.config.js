@@ -1,4 +1,7 @@
+// This file, and its dependencies, are needed specifically for Jest.
 module.exports = {
-  targets: 'current node',
-  presets: [['@shopify/babel-preset', {modules: 'commonjs', typescript: true}]],
+  presets: [
+    ['@babel/preset-env', {targets: {node: 'current'}}],
+    '@babel/preset-typescript',
+  ],
 };

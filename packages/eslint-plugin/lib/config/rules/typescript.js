@@ -40,7 +40,8 @@ module.exports = {
   '@typescript-eslint/no-non-null-assertion': 'off',
   // Disallow the use of variables before they are defined.
   '@typescript-eslint/no-use-before-define': 'off',
-  // Disallows the use of require statements except in import statements (no-var-requires from TSLint)
+  // Disallows the use of require statements except in import statements
+  // (no-var-requires from TSLint)
   '@typescript-eslint/no-var-requires': 'error',
   // Enforce the use of the keyword namespace over module to declare custom TypeScript modules. (no-internal-module from TSLint)
   '@typescript-eslint/prefer-namespace-keyword': 'off',

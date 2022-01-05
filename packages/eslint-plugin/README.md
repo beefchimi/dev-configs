@@ -19,8 +19,9 @@ yarn add --dev @beefchimi/eslint-plugin
 ```json
 {
   "extends": [
-    "plugin:@beefchimi/core",
+    "plugin:@beefchimi/esnext",
     "plugin:@beefchimi/react",
+    "plugin:@beefchimi/typescript",
     "plugin:@beefchimi/jest",
     "plugin:@beefchimi/node",
     "plugin:@beefchimi/prettier"

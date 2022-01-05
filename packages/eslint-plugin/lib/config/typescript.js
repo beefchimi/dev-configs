@@ -1,47 +1,67 @@
 module.exports = {
+  extends: ['plugin:@beefchimi/esnext', 'plugin:import/typescript'],
+  plugins: ['@typescript-eslint'],
+
   overrides: [
     {
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        ecmaVersion: 2021,
+        sourceType: 'module',
+      },
       files: ['*.ts', '*.tsx'],
-
       rules: {
-        // Disallows awaiting a value that is not a Thenable
-        '@typescript-eslint/await-thenable': 'error',
-        // Disallow iterating over an array with a for-in loop
-        '@typescript-eslint/no-for-in-array': 'error',
-        // Avoid using promises in places not designed to handle them
-        '@typescript-eslint/no-misused-promises': [
-          'error',
-          {
-            checksVoidReturn: true,
-            checksConditionals: true,
-          },
-        ],
-        // Warns if a type assertion does not change the type of an expression
-        // Disabling here because in most cases the explicitness is still valuable
-        '@typescript-eslint/no-unnecessary-type-assertion': 'off',
-        // Enforce includes method over indexOf method
-        '@typescript-eslint/prefer-includes': 'error',
-        // Prefer RegExp#exec() over String#match() if no global flag is provided
-        '@typescript-eslint/prefer-regexp-exec': 'error',
-        // Enforce the use of String#startsWith and String#endsWith instead of other equivalent methods of checking substrings
-        '@typescript-eslint/prefer-string-starts-ends-with': 'error',
-        // Disallow async functions which have no await expression
-        '@typescript-eslint/require-await': 'error',
-        // Enforces unbound methods are called with their expected scope
-        '@typescript-eslint/unbound-method': ['error', {ignoreStatic: false}],
-        // Warns when a namespace qualifier is unnecessary
-        '@typescript-eslint/no-unnecessary-qualifier': 'error',
-        // When adding two variables, operands must both be of type number or of type string
-        '@typescript-eslint/restrict-plus-operands': 'error',
-        // Prevents conditionals where the type is always truthy or always falsy
-        '@typescript-eslint/no-unnecessary-condition': ['error'],
-        // Warns if an explicitly specified type argument is the default for that type parameter
-        '@typescript-eslint/no-unnecessary-type-arguments': 'error',
-        // Requires that private members are marked as readonly if they're never modified outside of the constructor
-        '@typescript-eslint/prefer-readonly': [
-          'error',
-          {onlyInlineLambdas: false},
-        ],
+        ...require('./rules/typescript'),
+        // TypeScript provides a better mechanism (explicit `this` type) for ensuring
+        // proper `this` usage in functions not assigned to object properties.
+        '@babel/no-invalid-this': 'off',
+
+        // Handled by TypeScript itself
+        'no-undef': 'off',
+        'no-unused-expressions': 'off',
+        'no-unused-vars': 'off',
+        'no-useless-constructor': 'off',
+        'no-shadow': 'off',
+        'no-use-before-define': 'off',
+        semi: 'off',
+        quotes: 'off',
+        indent: 'off',
+        'brace-style': 'off',
+        'require-await': 'off',
+        'no-magic-numbers': 'off',
+        'no-extra-parens': 'off',
+        'no-empty-function': 'off',
+        'func-call-spacing': 'off',
+        'sort-class-members/sort-class-members': 'off',
+        camelcase: 'off',
+        'no-array-constructor': 'off',
+        'no-dupe-args': 'off',
+        'no-dupe-keys': 'off',
+        'no-unreachable': 'off',
+        'valid-typeof': 'off',
+        'no-const-assign': 'off',
+        'no-new-symbol': 'off',
+        'no-this-before-super': 'off',
+        'no-redeclare': 'off',
+
+        // Does not support TS equivalent
+        'import/no-unresolved': 'off',
+
+        // Flag overloaded methods in TS
+        'no-dupe-class-members': 'off',
+
+        // Flag typedef files with multiple modules with export default
+        'import/export': 'off',
+
+        // Breaks @typescript-eslint/parser
+        strict: 'off',
+        'array-callback-return': 'off',
+        'getter-return': 'off',
+
+        // Prefer TypeScript enums be defined using Pascal case
+        '@beefchimi/typescript/prefer-pascal-case-enums': 'error',
+        // Prefer TypeScript enums be defined using singular names
+        '@beefchimi/typescript/prefer-singular-enums': 'error',
       },
     },
   ],

@@ -1,4 +1,3 @@
-/* eslint-disable import/order */
 const getTestRule = require('jest-preset-stylelint/getTestRule');
 const {ruleName} = require('./content-no-strings');
 

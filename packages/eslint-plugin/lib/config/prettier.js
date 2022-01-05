@@ -5,6 +5,8 @@ module.exports = {
   rules: {
     ...require('./rules/prettier'),
     // Rules to disable to prefer prettier
+    '@babel/semi': 'off',
+    '@babel/object-curly-spacing': 'off',
     '@beefchimi/class-property-semi': 'off',
     '@beefchimi/binary-assignment-parens': 'off',
     'prefer-arrow-callback': 'off',
