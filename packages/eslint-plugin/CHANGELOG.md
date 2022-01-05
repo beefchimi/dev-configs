@@ -1,4 +1,4 @@
-# @beefchimi/plugin-eslint
+# @beefchimi/eslint-plugin
 
 ## 0.0.2
 

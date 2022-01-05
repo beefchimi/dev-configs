@@ -1,6 +1,6 @@
 {
-  "name": "@beefchimi/plugin-eslint",
-  "version": "1.0.0",
+  "name": "@beefchimi/eslint-plugin",
+  "version": "0.0.2",
   "description": "JavaScript linting configuration.",
   "author": "Curtis Dulmage",
   "license": "ISC",
@@ -11,14 +11,14 @@
     "eslint",
     "javascript"
   ],
-  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/plugin-eslint/README.md",
+  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/eslint-plugin/README.md",
   "bugs": {
     "url": "https://github.com/beefchimi/dev-configs/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beefchimi/dev-configs.git",
-    "directory": "packages/plugin-eslint"
+    "directory": "packages/eslint-plugin"
   },
   "publishConfig": {
     "access": "public",

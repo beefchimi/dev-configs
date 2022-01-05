@@ -10,7 +10,6 @@ module.exports = {
     'jsx-prefer-fragment-wrappers': require('./lib/rules/jsx-prefer-fragment-wrappers'),
     'no-ancestor-directory-import': require('./lib/rules/no-ancestor-directory-import'),
     'no-debugger': require('./lib/rules/no-debugger'),
-    'no-namespace-imports': require('./lib/rules/no-namespace-imports'),
     'no-useless-computed-properties': require('./lib/rules/no-useless-computed-properties'),
     'prefer-class-properties': require('./lib/rules/prefer-class-properties'),
     'prefer-module-scope-constants': require('./lib/rules/prefer-module-scope-constants'),

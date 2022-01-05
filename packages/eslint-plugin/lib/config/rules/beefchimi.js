@@ -21,8 +21,6 @@ module.exports = {
   '@beefchimi/no-ancestor-directory-import': 'off',
   // Disallow the use of debugger (without fixer to prevent autofix on save in editors).
   '@beefchimi/no-debugger': 'error',
-  // Prevent namespace import declarations.
-  '@beefchimi/no-namespace-imports': 'off',
   // Prevent the usage of unnecessary computed properties.
   '@beefchimi/no-useless-computed-properties': 'error',
   // Prefer class properties to assignment of literals in constructors.
