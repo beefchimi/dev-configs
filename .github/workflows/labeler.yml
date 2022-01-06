@@ -1,6 +1,5 @@
 name: Labeler
-on:
-  - pull_request_target
+on: [pull_request_target]
 
 jobs:
   triage:
@@ -22,4 +21,4 @@ jobs:
       - name: Apply PR labels
         uses: actions/labeler@v3
         with:
-          repo-token: '${{ steps.generate-token.outputs.token }}'
+          repo-token: ${{ steps.generate-token.outputs.token }}
