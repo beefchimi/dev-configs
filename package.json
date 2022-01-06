@@ -25,7 +25,8 @@
   "scripts": {
     "lint": "lerna run lint --",
     "test": "jest",
-    "bootstrap": "lerna bootstrap",
+    "replace-npmignore": "./scripts/replace-npmignore.sh",
+    "bootstrap": "yarn run replace-npmignore && lerna bootstrap",
     "build": "lerna run build",
     "reboot": "./scripts/reboot-yarn-legacy.sh",
     "report": "yarn changeset",
