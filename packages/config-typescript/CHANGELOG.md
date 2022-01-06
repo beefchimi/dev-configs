@@ -1,5 +1,11 @@
 # @beefchimi/config-typescript
 
+## 0.0.5
+
+### Patch Changes
+
+- [#28](https://github.com/beefchimi/dev-configs/pull/28) [`f229f96`](https://github.com/beefchimi/dev-configs/commit/f229f96278bedc0218ef55bf66265cf5c9553812) Thanks [@beefchimi](https://github.com/beefchimi)! - Stop ignoring config folder from published packages.
+
 ## 0.0.4
 
 ### Patch Changes
