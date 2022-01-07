@@ -12,7 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: tibdex/github-app-token@v1
+      - name: Generate unique app token
+        uses: tibdex/github-app-token@v1
         id: generate-token
         with:
           app_id: ${{ secrets.BEEFCHIMI_APP_ID }}
