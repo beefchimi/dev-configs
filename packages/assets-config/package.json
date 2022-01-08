@@ -1,5 +1,5 @@
 {
-  "name": "@beefchimi/config-assets",
+  "name": "@beefchimi/assets-config",
   "version": "0.0.5",
   "description": "Asset optimization settings.",
   "author": "Curtis Dulmage",
@@ -13,14 +13,14 @@
     "optimize",
     "svg"
   ],
-  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/config-assets/README.md",
+  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/assets-config/README.md",
   "bugs": {
     "url": "https://github.com/beefchimi/dev-configs/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beefchimi/dev-configs.git",
-    "directory": "packages/config-assets"
+    "directory": "packages/assets-config"
   },
   "publishConfig": {
     "access": "public",
@@ -30,7 +30,7 @@
   "scripts": {
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "test": "echo 'Run `jest` from root.'",
-    "build": "echo 'Nothing to build in `config-assets`.'",
+    "build": "echo 'Nothing to build in `assets-config`.'",
     "prepublish": "yarn run build"
   },
   "devDependencies": {
