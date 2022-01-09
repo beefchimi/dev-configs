@@ -1,5 +1,5 @@
 {
-  "name": "@beefchimi/config-prettier",
+  "name": "@beefchimi/prettier-config",
   "version": "0.0.5",
   "description": "Code style settings.",
   "author": "Curtis Dulmage",
@@ -11,14 +11,14 @@
     "style",
     "prettier"
   ],
-  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/config-prettier/README.md",
+  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/prettier-config/README.md",
   "bugs": {
     "url": "https://github.com/beefchimi/dev-configs/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beefchimi/dev-configs.git",
-    "directory": "packages/config-prettier"
+    "directory": "packages/prettier-config"
   },
   "publishConfig": {
     "access": "public",
@@ -26,9 +26,9 @@
   },
   "main": "index.json",
   "scripts": {
-    "lint": "echo 'Nothing to lint in `config-prettier`.'",
+    "lint": "echo 'Nothing to lint in `prettier-config`.'",
     "test": "echo 'Run `jest` from root'",
-    "build": "echo 'Nothing to build in `config-prettier`.'",
+    "build": "echo 'Nothing to build in `prettier-config`.'",
     "prepublish": "yarn run build"
   },
   "devDependencies": {
