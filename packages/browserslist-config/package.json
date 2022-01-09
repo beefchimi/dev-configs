@@ -1,5 +1,5 @@
 {
-  "name": "@beefchimi/config-browserslist",
+  "name": "@beefchimi/browserslist-config",
   "version": "0.0.5",
   "description": "Common range of modern browser support.",
   "author": "Curtis Dulmage",
@@ -11,14 +11,14 @@
     "browsers",
     "support"
   ],
-  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/config-browserslist/README.md",
+  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/browserslist-config/README.md",
   "bugs": {
     "url": "https://github.com/beefchimi/dev-configs/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beefchimi/dev-configs.git",
-    "directory": "packages/config-browserslist"
+    "directory": "packages/browserslist-config"
   },
   "publishConfig": {
     "access": "public",
@@ -28,7 +28,7 @@
   "scripts": {
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "test": "echo 'Run `jest` from root.'",
-    "build": "echo 'Nothing to build in `config-browserslist`.'",
+    "build": "echo 'Nothing to build in `browserslist-config`.'",
     "prepublish": "yarn run build"
   },
   "devDependencies": {
