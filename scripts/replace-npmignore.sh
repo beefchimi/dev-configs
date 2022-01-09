@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # This script is used for applying a consistent .npmignore to each package.
 
 function replaceNpmIgnore() {

@@ -1,26 +1,24 @@
 {
-  "name": "@beefchimi/config-assets",
+  "name": "@beefchimi/browserslist-config",
   "version": "0.0.5",
-  "description": "Asset optimization settings.",
+  "description": "Common range of modern browser support.",
   "author": "Curtis Dulmage",
   "license": "ISC",
   "keywords": [
     "web",
     "development",
     "configuration",
-    "assets",
-    "media",
-    "optimize",
-    "svg"
+    "browsers",
+    "support"
   ],
-  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/config-assets/README.md",
+  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/browserslist-config/README.md",
   "bugs": {
     "url": "https://github.com/beefchimi/dev-configs/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beefchimi/dev-configs.git",
-    "directory": "packages/config-assets"
+    "directory": "packages/browserslist-config"
   },
   "publishConfig": {
     "access": "public",
@@ -30,13 +28,13 @@
   "scripts": {
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "test": "echo 'Run `jest` from root.'",
-    "build": "echo 'Nothing to build in `config-assets`.'",
+    "build": "echo 'Nothing to build in `browserslist-config`.'",
     "prepublish": "yarn run build"
   },
   "devDependencies": {
-    "svgo": "^2.8.0"
+    "browserslist": "^4.19.1"
   },
   "peerDependencies": {
-    "svgo": ">=2.8.0"
+    "browserslist": ">=4.19.1"
   }
 }

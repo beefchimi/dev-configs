@@ -1,40 +1,42 @@
 {
-  "name": "@beefchimi/config-prettier",
+  "name": "@beefchimi/assets-config",
   "version": "0.0.5",
-  "description": "Code style settings.",
+  "description": "Asset optimization settings.",
   "author": "Curtis Dulmage",
   "license": "ISC",
   "keywords": [
     "web",
     "development",
     "configuration",
-    "style",
-    "prettier"
+    "assets",
+    "media",
+    "optimize",
+    "svg"
   ],
-  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/config-prettier/README.md",
+  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/assets-config/README.md",
   "bugs": {
     "url": "https://github.com/beefchimi/dev-configs/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beefchimi/dev-configs.git",
-    "directory": "packages/config-prettier"
+    "directory": "packages/assets-config"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
-  "main": "index.json",
+  "main": "index.js",
   "scripts": {
-    "lint": "echo 'Nothing to lint in `config-prettier`.'",
-    "test": "echo 'Run `jest` from root'",
-    "build": "echo 'Nothing to build in `config-prettier`.'",
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "test": "echo 'Run `jest` from root.'",
+    "build": "echo 'Nothing to build in `assets-config`.'",
     "prepublish": "yarn run build"
   },
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "svgo": "^2.8.0"
   },
   "peerDependencies": {
-    "prettier": ">=2.5.1"
+    "svgo": ">=2.8.0"
   }
 }

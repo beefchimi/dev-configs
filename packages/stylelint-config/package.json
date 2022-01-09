@@ -1,5 +1,5 @@
 {
-  "name": "@beefchimi/config-stylelint",
+  "name": "@beefchimi/stylelint-config",
   "version": "0.0.5",
   "description": "Linting for CSS and SCSS.",
   "author": "Curtis Dulmage",
@@ -12,14 +12,14 @@
     "lint",
     "css"
   ],
-  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/config-stylelint/README.md",
+  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/stylelint-config/README.md",
   "bugs": {
     "url": "https://github.com/beefchimi/dev-configs/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beefchimi/dev-configs.git",
-    "directory": "packages/config-stylelint"
+    "directory": "packages/stylelint-config"
   },
   "publishConfig": {
     "access": "public",
@@ -29,7 +29,7 @@
   "scripts": {
     "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
     "test": "echo 'Run `jest` from root'",
-    "build": "echo 'Nothing to build in `config-stylelint`.'",
+    "build": "echo 'Nothing to build in `stylelint-config`.'",
     "prepublish": "yarn run build"
   },
   "dependencies": {

@@ -1,40 +1,40 @@
 {
-  "name": "@beefchimi/config-browserslist",
+  "name": "@beefchimi/prettier-config",
   "version": "0.0.5",
-  "description": "Common range of modern browser support.",
+  "description": "Code style settings.",
   "author": "Curtis Dulmage",
   "license": "ISC",
   "keywords": [
     "web",
     "development",
     "configuration",
-    "browsers",
-    "support"
+    "style",
+    "prettier"
   ],
-  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/config-browserslist/README.md",
+  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/prettier-config/README.md",
   "bugs": {
     "url": "https://github.com/beefchimi/dev-configs/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beefchimi/dev-configs.git",
-    "directory": "packages/config-browserslist"
+    "directory": "packages/prettier-config"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
-  "main": "index.js",
+  "main": "index.json",
   "scripts": {
-    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
-    "test": "echo 'Run `jest` from root.'",
-    "build": "echo 'Nothing to build in `config-browserslist`.'",
+    "lint": "echo 'Nothing to lint in `prettier-config`.'",
+    "test": "echo 'Run `jest` from root'",
+    "build": "echo 'Nothing to build in `prettier-config`.'",
     "prepublish": "yarn run build"
   },
   "devDependencies": {
-    "browserslist": "^4.19.1"
+    "prettier": "^2.5.1"
   },
   "peerDependencies": {
-    "browserslist": ">=4.19.1"
+    "prettier": ">=2.5.1"
   }
 }
