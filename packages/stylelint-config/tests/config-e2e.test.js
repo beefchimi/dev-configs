@@ -11,7 +11,7 @@ const stripAnsi = require('strip-ansi');
 // in one file only per test case. Asserting no errors
 // are reported across multiple files is ok.
 
-describe('config-stylelint E2E Tests', () => {
+describe('stylelint-config E2E Tests', () => {
   it('configures value-keyword-case', () => {
     const result = runStylelint('value-keyword-case.*.scss');
 
