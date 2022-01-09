@@ -1,6 +1,6 @@
 {
   "name": "@beefchimi/postcss-plugin",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A collection of common PostCSS plugins.",
   "author": "Curtis Dulmage",
   "license": "ISC",
