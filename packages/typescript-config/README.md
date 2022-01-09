@@ -1,13 +1,13 @@
-# `config-typescript`
+# `typescript-config`
 
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC) [![npm version](https://badge.fury.io/js/%beefchimi%config-typescript.svg)](https://badge.fury.io/js/%beefchimi%config-typescript.svg)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC) [![npm version](https://badge.fury.io/js/%beefchimi%typescript-config.svg)](https://badge.fury.io/js/%beefchimi%typescript-config.svg)
 
 Common configurations for any kind of TypeScript project.
 
 ## Installation
 
 ```bash
-yarn add --dev @beefchimi/config-typescript
+yarn add --dev @beefchimi/typescript-config
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ A typical setup where the application lives within a `[project root]/app` folder
 
 ```json
 {
-  "extends": "@beefchimi/config-typescript/application.json",
+  "extends": "@beefchimi/typescript-config/application.json",
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": ".",
@@ -36,7 +36,7 @@ Similarly for a React library project. Create a `tsconfig.json` in the root of y
 
 ```json
 {
-  "extends": "@beefchimi/config-typescript/library.json",
+  "extends": "@beefchimi/typescript-config/library.json",
   "compilerOptions": {
     "baseUrl": "./src",
     "rootDir": "."
@@ -51,7 +51,7 @@ A configuration file is provided that includes style setup and a more conservati
 
 ```json
 {
-  "extends": "@beefchimi/config-typescript/dom.json",
+  "extends": "@beefchimi/typescript-config/dom.json",
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": "."
@@ -65,7 +65,7 @@ A base configuration file is also provided if the above does not fit your need.
 
 ```json
 {
-  "extends": "@beefchimi/config-typescript/base.json",
+  "extends": "@beefchimi/typescript-config/base.json",
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": "."
@@ -83,7 +83,7 @@ eg.
 
 ```json
 {
-  "extends": "@beefchimi/config-typescript/base.json",
+  "extends": "@beefchimi/typescript-config/base.json",
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": ".",

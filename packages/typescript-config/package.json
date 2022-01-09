@@ -1,5 +1,5 @@
 {
-  "name": "@beefchimi/config-typescript",
+  "name": "@beefchimi/typescript-config",
   "version": "0.0.5",
   "description": "Common configurations for any kind of TypeScript project.",
   "author": "Curtis Dulmage",
@@ -13,23 +13,23 @@
     "library",
     "node"
   ],
-  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/config-typescript/README.md",
+  "homepage": "https://github.com/beefchimi/dev-configs/blob/main/packages/typescript-config/README.md",
   "bugs": {
     "url": "https://github.com/beefchimi/dev-configs/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beefchimi/dev-configs.git",
-    "directory": "packages/config-typescript"
+    "directory": "packages/typescript-config"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "lint": "echo 'Nothing to lint in `config-typescript`.'",
+    "lint": "echo 'Nothing to lint in `typescript-config`.'",
     "test": "echo 'Run `jest` from root'",
-    "build": "echo 'Nothing to build in `config-typescript`.'",
+    "build": "echo 'Nothing to build in `typescript-config`.'",
     "prepublish": "yarn run build"
   },
   "devDependencies": {
