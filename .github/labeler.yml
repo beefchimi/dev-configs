@@ -17,10 +17,10 @@
         '!*.md',
       ]
 # Package labels
-📦️ config-assets: packages/config-assets/**/*
-📦️ config-browserslist: packages/config-browserslist/**/*
-📦️ config-prettier: packages/config-prettier/**/*
-📦️ config-stylelint: packages/config-stylelint/**/*
-📦️ config-typescript: packages/config-typescript/**/*
-📦️ plugin-eslint: packages/eslint-plugin/**/*
-📦️ plugin-postcss: packages/postcss-plugin/**/*
+📦️ config: assets: packages/assets-config/**/*
+📦️ config: browserslist: packages/browserslist-config/**/*
+📦️ config: prettier: packages/prettier-config/**/*
+📦️ config: stylelint: packages/stylelint-config/**/*
+📦️ config: typescript: packages/typescript-config/**/*
+📦️ plugin: eslint: packages/eslint-plugin/**/*
+📦️ plugin: postcss: packages/postcss-plugin/**/*
