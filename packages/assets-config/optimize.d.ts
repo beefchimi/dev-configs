@@ -1,1 +1,1 @@
-export function svgoConfig(): {[key: string]: unknown};
+export function svgoOptions(): {[key: string]: unknown};

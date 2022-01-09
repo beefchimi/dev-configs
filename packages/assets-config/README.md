@@ -16,4 +16,4 @@ yarn add --dev @beefchimi/assets-config
 
 This package exports helpers for optimizing images. The following members are exported:
 
-- `svgoConfig`: an object containing the recommended options for using `svgo`.
+- `svgoOptions`: an object containing the recommended options for using `svgo`.

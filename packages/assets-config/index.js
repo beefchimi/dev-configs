@@ -1,1 +1,5 @@
-export {svgoConfig} from './optimize';
+import {svgOptions} from './optimize';
+
+module.exports = {
+  svgOptions,
+};

@@ -1,4 +1,4 @@
-export function svgoConfig() {
+export function svgoOptions() {
   return {
     plugins: [
       {
