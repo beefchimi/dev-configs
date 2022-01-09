@@ -31,8 +31,8 @@
     "prepublish": "yarn run build"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.1",
-    "postcss-calc": "^8.1.0",
+    "autoprefixer": "^10.4.2",
+    "postcss-calc": "^8.2.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-will-change": "^4.0.1"
   },
