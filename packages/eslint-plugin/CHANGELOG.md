@@ -1,5 +1,13 @@
 # @beefchimi/eslint-plugin
 
+## 0.0.8
+
+### Patch Changes
+
+- [#38](https://github.com/beefchimi/dev-configs/pull/38) [`7d0a61e`](https://github.com/beefchimi/dev-configs/commit/7d0a61ed2441716e1ab9c8457ba0fee6681d0f98) Thanks [@beefchimi](https://github.com/beefchimi)! - Setting `noImplicitAny: true` in `base` TypeScript config.
+
+* [#41](https://github.com/beefchimi/dev-configs/pull/41) [`7fc1e0c`](https://github.com/beefchimi/dev-configs/commit/7fc1e0c34c212c7ecb04aa16cce67e986304b7b1) Thanks [@beefchimi](https://github.com/beefchimi)! - Bumped dependencies and disabled a jest rule for vitest compatibility.
+
 ## 0.0.7
 
 ### Patch Changes
