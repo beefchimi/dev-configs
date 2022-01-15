@@ -86,6 +86,9 @@ module.exports = {
   'jest/prefer-hooks-on-top': 'error',
   // Require top-level describe block
   'jest/require-top-level-describe': 'error',
+  // TODO: This has been disabled because it is causing errors
+  // in projects using `vitest` instead of `jest`.
+  // https://github.com/beefchimi/dev-configs/issues/40
   // Avoid using deprecated functions
-  'jest/no-deprecated-functions': 'error',
+  // 'jest/no-deprecated-functions': 'error',
 };
