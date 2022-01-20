@@ -19,7 +19,9 @@ module.exports = {
         // Handled by TypeScript itself
         'no-undef': 'off',
         'no-unused-expressions': 'off',
-        'no-unused-vars': 'off',
+        // TODO: Investigate this
+        // https://github.com/beefchimi/dev-configs/issues/42
+        // 'no-unused-vars': 'off',
         'no-useless-constructor': 'off',
         'no-shadow': 'off',
         'no-use-before-define': 'off',

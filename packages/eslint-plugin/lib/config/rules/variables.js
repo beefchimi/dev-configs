@@ -23,7 +23,10 @@ module.exports = {
   // Disallow use of undefined variable
   'no-undefined': 'off',
   // Disallow declaration of variables that are not used in the code
-  'no-unused-vars': 'error',
+  'no-unused-vars': [
+    'error',
+    {argsIgnorePattern: '^_', varsIgnorePattern: '^_'},
+  ],
   // Disallow use of variables before they are defined
   'no-use-before-define': ['error', 'nofunc'],
 };
