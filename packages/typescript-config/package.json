@@ -1,6 +1,6 @@
 {
   "name": "@beefchimi/typescript-config",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Common configurations for any kind of TypeScript project.",
   "author": "Curtis Dulmage",
   "license": "ISC",

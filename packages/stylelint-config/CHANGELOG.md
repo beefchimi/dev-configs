@@ -1,5 +1,13 @@
 # @beefchimi/stylelint-config
 
+## 0.0.9
+
+### Patch Changes
+
+- [#45](https://github.com/beefchimi/dev-configs/pull/45) [`788788a`](https://github.com/beefchimi/dev-configs/commit/788788ac78799b9ffd955d1c578fa42e915c40f0) Thanks [@beefchimi](https://github.com/beefchimi)! - Some minor dependency bumps.
+
+* [#43](https://github.com/beefchimi/dev-configs/pull/43) [`1473f9c`](https://github.com/beefchimi/dev-configs/commit/1473f9cc7b3f0293bc8b769474a295aafb46be3b) Thanks [@beefchimi](https://github.com/beefchimi)! - Consider `eslint > no-unused-vars` to allow underscore prefixes.
+
 ## 0.0.8
 
 ### Patch Changes
